@@ -73,8 +73,6 @@ def render_login_page(request: Request):
 
 
 ### Endpoints ###
-
-
 def authenticate_user(username: str, password: str, db: Session):
     user: Users | None = db.query(Users).filter(Users.username == username).first()
     if not user:
