@@ -1,0 +1,141 @@
+.
+├── app
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── database.cpython-311.pyc
+│   │   ├── database.cpython-312.pyc
+│   │   ├── main.cpython-311.pyc
+│   │   ├── main.cpython-312.pyc
+│   │   ├── models.cpython-311.pyc
+│   │   └── models.cpython-312.pyc
+│   ├── alembic
+│   │   ├── README
+│   │   ├── __pycache__
+│   │   │   └── env.cpython-311.pyc
+│   │   ├── env.py
+│   │   ├── script.py.mako
+│   │   └── versions
+│   │       ├── __pycache__
+│   │       └── b3d8dc8dbfef_create_phone_number_col_on_users_table.py
+│   ├── alembic.ini
+│   ├── database.py
+│   ├── main.py
+│   ├── models.py
+│   ├── routers
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-311.pyc
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── admin.cpython-311.pyc
+│   │   │   ├── admin.cpython-312.pyc
+│   │   │   ├── auth.cpython-311.pyc
+│   │   │   ├── auth.cpython-312.pyc
+│   │   │   ├── todos.cpython-311.pyc
+│   │   │   ├── todos.cpython-312.pyc
+│   │   │   ├── users.cpython-311.pyc
+│   │   │   └── users.cpython-312.pyc
+│   │   ├── admin.py
+│   │   ├── auth.py
+│   │   ├── todos.py
+│   │   └── users.py
+│   ├── static
+│   │   ├── css
+│   │   │   ├── base.css
+│   │   │   └── bootstrap.css
+│   │   └── js
+│   │       ├── base.js
+│   │       ├── bootstrap.js
+│   │       ├── bootstrap.js.map
+│   │       ├── jquery-slim.js
+│   │       ├── popper.js
+│   │       └── popper.min.js.map
+│   ├── templates
+│   │   ├── home.html
+│   │   └── login.html
+│   ├── test
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-311.pyc
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── test_admin.cpython-312-pytest-8.3.4.pyc
+│   │   │   ├── test_auth.cpython-312-pytest-8.3.4.pyc
+│   │   │   ├── test_example.cpython-311-pytest-8.3.4.pyc
+│   │   │   ├── test_example.cpython-312-pytest-8.3.4.pyc
+│   │   │   ├── test_main.cpython-311-pytest-8.3.4.pyc
+│   │   │   ├── test_main.cpython-312-pytest-8.3.4.pyc
+│   │   │   ├── test_todos.cpython-312-pytest-8.3.4.pyc
+│   │   │   ├── test_users.cpython-312-pytest-8.3.4.pyc
+│   │   │   └── utils.cpython-312.pyc
+│   │   ├── test_admin.py
+│   │   ├── test_auth.py
+│   │   ├── test_example.py
+│   │   ├── test_main.py
+│   │   ├── test_todos.py
+│   │   ├── test_users.py
+│   │   └── utils.py
+│   └── test_db.db
+├── requirements.txt
+├── ruff.toml
+├── settings.json
+├── tree.txt
+└── venv
+    ├── bin
+    │   ├── Activate.ps1
+    │   ├── activate
+    │   ├── activate.csh
+    │   ├── activate.fish
+    │   ├── autopep8
+    │   ├── black
+    │   ├── blackd
+    │   ├── dmypy
+    │   ├── fastapi
+    │   ├── httpx
+    │   ├── identify-cli
+    │   ├── ipython
+    │   ├── ipython3
+    │   ├── isort
+    │   ├── isort-identify-imports
+    │   ├── jose
+    │   ├── markdown-it
+    │   ├── mypy
+    │   ├── mypyc
+    │   ├── nbqa
+    │   ├── nodeenv
+    │   ├── pip
+    │   ├── pip3
+    │   ├── pip3.12
+    │   ├── pre-commit
+    │   ├── py.test
+    │   ├── pycodestyle
+    │   ├── pygmentize
+    │   ├── pyrsa-decrypt
+    │   ├── pyrsa-encrypt
+    │   ├── pyrsa-keygen
+    │   ├── pyrsa-priv2pub
+    │   ├── pyrsa-sign
+    │   ├── pyrsa-verify
+    │   ├── pytest
+    │   ├── python -> /Users/tylernardone/.pyenv/versions/3.12.4/bin/python
+    │   ├── python3 -> python
+    │   ├── python3.12 -> python
+    │   ├── shiny
+    │   ├── stubgen
+    │   ├── stubtest
+    │   ├── tokenize-rt
+    │   ├── tqdm
+    │   ├── uvicorn
+    │   ├── virtualenv
+    │   └── watchfiles
+    ├── include
+    │   └── python3.12
+    ├── lib
+    │   └── python3.12
+    │       └── site-packages
+    ├── pyvenv.cfg
+    └── share
+        └── man
+            └── man1
+
+25 directories, 114 files
