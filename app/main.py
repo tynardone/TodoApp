@@ -1,6 +1,6 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, status
+from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
 
 from .database import engine
 from .models import Base
@@ -12,13 +12,12 @@ app = FastAPI()
 Base.metadata.create_all(bind=engine)
 
 # Frontend
-templates = Jinja2Templates(directory="app/templates")
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 
 @app.get("/")
-def home(request: Request):
-    return templates.TemplateResponse("home.html", context={"request": request})
+def test(request: Request):
+    return RedirectResponse(url="/todos/todo-page", status_code=status.HTTP_302_FOUND)
 
 
 @app.get("/healthy")

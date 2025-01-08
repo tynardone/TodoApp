@@ -1,15 +1,14 @@
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, Path, Request, status
+from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 from starlette.responses import RedirectResponse
-from fastapi.templating import Jinja2Templates
 
 from ..database import SessionLocal
 from ..models import Todos
 from .auth import get_current_user
-
 
 templates = Jinja2Templates(directory="app/templates")
 router = APIRouter(prefix="/todos", tags=["todos"])
