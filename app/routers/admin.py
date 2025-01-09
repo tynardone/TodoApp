@@ -6,7 +6,7 @@ from jose import JWTError, jwt
 from sqlalchemy.orm import Session
 from starlette import status
 
-from ..database import SessionLocal
+from ..database import get_db
 from ..models import Todos
 
 SECRET_KEY: str = "2e9130e14cfb4b057709970f09765e432dff09d8b667b2e31f9cc35aa3c7dda8"
@@ -14,14 +14,6 @@ ALGORITHM = "HS256"
 
 router: APIRouter = APIRouter(prefix="/admin", tags=["admin"])
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl="auth/token")
-
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 
 async def get_current_user(token: Annotated[str, Depends(oauth2_bearer)]):

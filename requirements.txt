@@ -85,6 +85,9 @@ tokenize_rt==6.1.0
 tomli==2.0.2
 tqdm==4.67.0
 traitlets==5.14.3
+types-passlib==1.7.7.20241221
+types-pyasn1==0.6.0.20240913
+types-python-jose==3.3.4.20240106
 typing_extensions==4.12.2
 uc-micro-py==1.0.3
 uvicorn==0.31.1

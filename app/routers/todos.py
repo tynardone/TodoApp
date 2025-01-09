@@ -6,20 +6,12 @@ from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 from starlette.responses import RedirectResponse
 
-from ..database import SessionLocal
+from ..database import get_db
 from ..models import Todos
 from .auth import get_current_user
 
 templates = Jinja2Templates(directory="app/templates")
 router = APIRouter(prefix="/todos", tags=["todos"])
-
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 
 db_dependency = Annotated[Session, Depends(get_db)]

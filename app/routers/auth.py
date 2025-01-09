@@ -10,7 +10,7 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from starlette import status
 
-from ..database import SessionLocal
+from ..database import get_db
 from ..models import Users
 
 # These work together to add a signature to the JWT
@@ -35,14 +35,6 @@ class CreateUserRequest(BaseModel):
 class Token(BaseModel):
     access_token: str
     token_type: str
-
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 
 async def get_current_user(token: Annotated[str, Depends(oauth2_bearer)]):
