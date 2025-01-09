@@ -51,7 +51,7 @@ async def render_todo_page(request: Request, db: db_dependency):
             "todo.html", context={"request": request, "todos": todos, "user": user}
         )
 
-    except Exception as e:
+    except Exception:
         return redirect_to_login()
 
 

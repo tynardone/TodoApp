@@ -18,6 +18,11 @@ router: APIRouter = APIRouter(prefix="/user", tags=["user"])
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl="auth/token")
 
 
+class UserVerification(BaseModel):
+    password: str
+    new_password: str = Field(min_length=6)
+
+
 async def get_current_user(token: Annotated[str, Depends(oauth2_bearer)]):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
@@ -32,11 +37,6 @@ async def get_current_user(token: Annotated[str, Depends(oauth2_bearer)]):
         return {"username": username, "id": user_id, "user_role": user_role}
     except JWTError:
         raise HTTPException(status_code=401, detail="Could not validate user.")
-
-
-class UserVerification(BaseModel):
-    password: str
-    new_password: str = Field(min_length=6)
 
 
 db_dependency = Annotated[Session, Depends(get_db)]

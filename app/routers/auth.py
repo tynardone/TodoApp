@@ -20,6 +20,8 @@ ALGORITHM = "HS256"
 router: APIRouter = APIRouter(prefix="/auth", tags=["auth"])
 bcrypt_context: CryptContext = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl="auth/token")
+db_dependency = Annotated[Session, Depends(get_db)]
+templates = Jinja2Templates(directory="app/templates")
 
 
 class CreateUserRequest(BaseModel):
@@ -51,11 +53,6 @@ async def get_current_user(token: Annotated[str, Depends(oauth2_bearer)]):
         return {"username": username, "id": user_id, "user_role": user_role}
     except JWTError:
         raise HTTPException(status_code=401, detail="Could not validate user.")
-
-
-db_dependency = Annotated[Session, Depends(get_db)]
-
-templates = Jinja2Templates(directory="app/templates")
 
 
 ### Pages ###
