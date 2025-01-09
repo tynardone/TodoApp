@@ -1,2 +1,2 @@
 # TodoApp
-FastAPI todo' app from Udemy tutorial
+FastAPI todo app from Udemy tutorial
