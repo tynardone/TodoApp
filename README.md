@@ -40,4 +40,3 @@ The TodoApp is a portfolio project that demonstrates proficiency in building and
 
 - Python 3.10+
 - `pip` for dependency management
-- Docker (optional for containerized deployment)
