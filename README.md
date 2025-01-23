@@ -56,8 +56,4 @@ The TodoApp helps users track tasks with an intuitive and lightweight interface.
 
 ## Deployment
 
-## Screenshots
-
-## Contributing
-
 ## License
