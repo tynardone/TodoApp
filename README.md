@@ -47,3 +47,17 @@ The TodoApp helps users track tasks with an intuitive and lightweight interface.
 - Python 3.10+
 - `pip` or `poetry` for dependency management
 - PostgreSQL (if using in production)
+
+## Usage
+
+## API Documentation
+
+## Development
+
+## Deployment
+
+## Screenshots
+
+## Contributing
+
+## License
