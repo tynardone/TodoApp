@@ -37,9 +37,8 @@ The TodoApp helps users track tasks with an intuitive and lightweight interface.
 
 - **Frontend**: Bootstrap
 - **Backend**: FastAPI
-- **Database**: SQLite/PostgreSQL
-- **Deployment**: Render/Heroku
-- **Others**: Docker, GitHub Actions, dotenv for configuration
+- **Database**: PostgreSQL
+- **Deployment**: Render
 
 ## Setup
 
@@ -48,4 +47,3 @@ The TodoApp helps users track tasks with an intuitive and lightweight interface.
 - Python 3.10+
 - `pip` or `poetry` for dependency management
 - PostgreSQL (if using in production)
-- Node.js (if extending frontend functionality)
