@@ -1,59 +1,48 @@
 # TodoApp
 
-> A fast, modern, and lightweight Todo Application built with FastAPI and Bootstrap.
+> A modern task management application built with FastAPI and Bootstrap, showcasing full-stack development skills and API best practices.
 
-[![Build Status](https://img.shields.io/travis/username/todoapp)](https://travis-ci.org/username/todoapp)  
+![Project Status](https://img.shields.io/badge/status-complete-brightgreen)  
 [![License](https://img.shields.io/github/license/username/todoapp)](LICENSE)
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Setup](#setup)
-- [Usage](#usage)
-- [API Documentation](#api-documentation)
-- [Development](#development)
-- [Deployment](#deployment)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
-## Introduction
+## Overview
 
-The TodoApp helps users track tasks with an intuitive and lightweight interface. Designed as part of a bootcamp project, it demonstrates the power of FastAPI for building modern APIs with clean, asynchronous code.
+The TodoApp is a portfolio project that demonstrates proficiency in building and deploying a full-stack application. This project showcases:
 
-## Features
+- **API Design**: A clean, RESTful API built with FastAPI.
+- **Database Management**: Integration with SQLite for local development and PostgreSQL for production.
+- **Frontend Skills**: A responsive UI powered by Bootstrap.
+- **Deployment Expertise**: Containerized with Docker and deployed to a live environment.
 
-- User authentication with email verification and password reset.
-- Create, update, delete, and retrieve todos.
-- Mark todos as complete or prioritize them.
-- Responsive UI using Bootstrap.
-- Deployed on Render/Heroku/Fly.io.
+---
+
+## Key Features
+
+- **User Authentication**: Secure login, email verification, and password reset.
+- **Task Management**: Create, update, delete, and prioritize todos.
+- **API Documentation**: Auto-generated Swagger and ReDoc interfaces.
+- **Testing**: Comprehensive test coverage using `pytest`.
+- **Deployment**: Hosted on [Render](https://render.com) with environment-based configurations.
+
+---
 
 ## Tech Stack
 
-- **Frontend**: Bootstrap
-- **Backend**: FastAPI
-- **Database**: PostgreSQL
-- **Deployment**: Render
+- **Backend**: FastAPI (Python)
+- **Frontend**: Bootstrap (HTML/CSS/JS)
+- **Database**: SQLite (development), PostgreSQL (production)
+- **Testing**: Pytest
+- **Deployment**: Docker, Render
+- **Version Control**: Git/GitHub
 
-## Setup
+---
+
+## Installation & Setup
 
 ### Prerequisites
 
 - Python 3.10+
-- `pip` or `poetry` for dependency management
-- PostgreSQL (if using in production)
-
-## Usage
-
-## API Documentation
-
-## Development
-
-## Deployment
-
-## License
+- `pip` for dependency management
+- Docker (optional for containerized deployment)
