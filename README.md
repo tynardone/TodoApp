@@ -5,7 +5,6 @@
 ![Project Status](https://img.shields.io/badge/status-complete-brightgreen)  
 [![License](https://img.shields.io/github/license/username/todoapp)](LICENSE)
 
----
 
 ## Overview
 
@@ -16,7 +15,6 @@ The TodoApp is a portfolio project that demonstrates proficiency in building and
 - **Frontend Skills**: A responsive UI powered by Bootstrap.
 - **Deployment Expertise**: Containerized with Docker and deployed to a live environment.
 
----
 
 ## Key Features
 
@@ -25,8 +23,6 @@ The TodoApp is a portfolio project that demonstrates proficiency in building and
 - **API Documentation**: Auto-generated Swagger and ReDoc interfaces.
 - **Testing**: Comprehensive test coverage using `pytest`.
 - **Deployment**: Hosted on [Render](https://render.com) with environment-based configurations.
-
----
 
 ## Tech Stack
 
@@ -37,7 +33,6 @@ The TodoApp is a portfolio project that demonstrates proficiency in building and
 - **Deployment**: Docker, Render
 - **Version Control**: Git/GitHub
 
----
 
 ## Installation & Setup
 
